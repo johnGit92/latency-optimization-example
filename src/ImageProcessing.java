@@ -9,8 +9,27 @@ import java.awt.image.BufferedImage;
 public class ImageProcessing {
 
 	/**
+	 * This method iterates through the entire image and applies the recoloring.
+	 * 
+	 * @param originalImage original image.
+	 * @param resultImage   result image.
+	 * @param leftCorner    value of the left corner of the image.
+	 * @param topCorner     value of the top corner of the image.
+	 * @param width         width of the image.
+	 * @param height        height of the image.
+	 */
+	public static void recolorImage(BufferedImage originalImage, BufferedImage resultImage, int leftCorner,
+			int topCorner, int width, int height) {
+		for (int x = leftCorner; x < leftCorner + width && x < originalImage.getWidth(); x++) {
+			for (int y = topCorner; y < topCorner + height && y < originalImage.getHeight(); y++) {
+				recolorPixel(originalImage, resultImage, x, y);
+			}
+		}
+	}
+
+	/**
 	 * Recolors the pixel at the x and y coordinates obtained from the original
-	 * image.
+	 * image into the result image.
 	 * 
 	 * @param originalImage original image.
 	 * @param resultImage   result image.
@@ -43,6 +62,14 @@ public class ImageProcessing {
 
 	}
 
+	/**
+	 * Assign the rgb color value to the image.
+	 * 
+	 * @param image target buffer image.
+	 * @param x     pixel x coordinate.
+	 * @param y     pixel y coordinate.
+	 * @param rgb   rgb value.
+	 */
 	public static void setRGB(BufferedImage image, int x, int y, int rgb) {
 		image.getRaster().setDataElements(x, y, image.getColorModel().getDataElements(rgb, null));
 	}
