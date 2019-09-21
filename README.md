@@ -6,7 +6,5 @@ This is a simple Java application that I created to familiarize with java multit
 The main task of this application is to digitally recolor all the white flowers to the same purplish color.
 
 This is the image to process
-
-![](https://github.com/johnGit92/latency-optimization-example/blob/master/many-flowers.jpg )
-
-<img src="https://github.com/johnGit92/latency-optimization-example/blob/master/many-flowers.jpg" width="48">
+<br>
+<img src="https://github.com/johnGit92/latency-optimization-example/blob/master/many-flowers.jpg" width="450" height="600">
