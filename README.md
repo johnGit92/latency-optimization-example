@@ -6,3 +6,5 @@ This is a simple Java application that I created to familiarize with java multit
 The main task of this application is to digitally recolor all the white flowers to the same purplish color.
 
 This is the image to process
+
+![alt text](http://url/to/img.png)
