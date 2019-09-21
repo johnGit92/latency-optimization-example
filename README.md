@@ -7,4 +7,4 @@ The main task of this application is to digitally recolor all the white flowers 
 
 This is the image to process
 
-![](https://github.com/johnGit92/latency-optimization-example/blob/master/many-flowers.jpg =250x250)
+![](https://github.com/johnGit92/latency-optimization-example/blob/master/many-flowers.jpg | width=100)
